@@ -1,21 +1,53 @@
-<aside class="sidebar">
-    <div>
-        <h1>DermaGlow</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Hidratantes</a></li>
-                <li><a href="#">Limpiadores</a></li>
-                <li><a href="#">Sueros</a></li>
-                <li><a href="#">Mascarillas</a></li>
-                <li><a href="#">Favoritos</a></li>
-                <li><a href="#">Tiendas</a></li>
-                <li><a href="#">Perfil</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div class="bottom-profile">
-        <i class="fas fa-user-circle"></i>
-        <p>Iniciar Sesión<br><small>Mi Cuenta</small></p>
-    </div>
-</aside>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DermaGlow</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="top-header">
+        <button id="menu-toggle" class="menu-toggle"><i class="fas fa-bars"></i></button>
+        <h2>Bienvenido a DermaGlow</h2>
+    </header>
+
+    <aside class="sidebar" id="sidebar">
+        <div>
+            <h1>DermaGlow</h1>
+            <nav>
+                <ul>
+                    <li><a href="#"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li><a href="#"><i class="fas fa-spa"></i> Hidratantes</a></li>
+                    <li><a href="#"><i class="fas fa-soap"></i> Limpiadores</a></li>
+                    <li><a href="#"><i class="fas fa-vial"></i> Sueros</a></li>
+                    <li><a href="#"><i class="fas fa-mask"></i> Mascarillas</a></li>
+                    <li><a href="#"><i class="fas fa-heart"></i> Favoritos</a></li>
+                    <li><a href="#"><i class="fas fa-store"></i> Tiendas</a></li>
+                    <li><a href="#"><i class="fas fa-user"></i> Perfil</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="bottom-profile">
+            <i class="fas fa-user-circle"></i>
+            <p>Iniciar Sesión<br><small>Mi Cuenta</small></p>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <p>Explora los productos más destacados del cuidado facial.</p>
+    </main>
+
+    <script>
+        const toggle = document.getElementById('menu-toggle');
+        const sidebar = document.getElementById('sidebar');
+        toggle.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

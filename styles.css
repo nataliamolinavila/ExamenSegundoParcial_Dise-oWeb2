@@ -1,7 +1,32 @@
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: 'Arial', sans-serif;
     background-color: #f9f6f7;
+}
+
+.top-header {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.menu-toggle {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    margin-right: 15px;
+    cursor: pointer;
+    color: #e27d9d;
 }
 
 .sidebar {
@@ -10,12 +35,17 @@ body {
     background: linear-gradient(to bottom right, #fef6f9, #f0f3f8);
     position: fixed;
     top: 0;
-    left: 0;
-    padding-top: 30px;
-    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
+    left: -270px;
+    transition: left 0.3s ease;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    z-index: 999;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar.active {
+    left: 0;
 }
 
 .sidebar h1 {
@@ -23,8 +53,7 @@ body {
     font-size: 1.8rem;
     color: #e27d9d;
     font-weight: bold;
-    margin-bottom: 40px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 30px 0 40px;
 }
 
 .sidebar nav ul {
@@ -70,4 +99,8 @@ body {
     margin: 0;
     color: #6c6c6c;
     font-size: 0.9rem;
+}
+
+.main-content {
+    padding: 100px 30px 30px 30px;
 }
