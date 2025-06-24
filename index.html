@@ -1,93 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HealthyBites - Comida Saludable</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HealthyBites</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+  <!-- Menú Lateral -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h1>HealthyBites</h1>
+    </div>
+    <nav class="sidebar-menu">
+      <ul>
+        <li><a href="#"><i class="fas fa-home"></i> Inicio</a></li>
+        <li><a href="#"><i class="fas fa-utensils"></i> Menú</a></li>
+        <li><a href="#"><i class="fas fa-heart"></i> Favoritos</a></li>
+        <li><a href="#"><i class="fas fa-map-marker-alt"></i> Locales</a></li>
+        <li><a href="#"><i class="fas fa-user"></i> Perfil</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Contenido Principal -->
+  <main class="main-content">
     <header class="header">
-        <button id="menu-toggle" class="menu-toggle">
-      <i class="fas fa-bars"></i>
-    </button>
-        <h1 class="logo">HealthyBites</h1>
-        <div class="header-icons">
-            <i class="fas fa-search"></i>
-            <i class="fas fa-shopping-cart"></i>
-        </div>
+      <button id="menu-toggle" class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+      <h2>Bienvenido</h2>
     </header>
+    <section class="content">
+      <p>Explora nuestros productos saludables.</p>
+    </section>
+  </main>
 
-    <aside id="sidebar" class="sidebar">
-        <div class="sidebar-header">
-            <img src="assets/user-profile.jpg" alt="Perfil" class="profile-img">
-            <h3>¡Hola, Usuario!</h3>
-        </div>
-        <nav class="sidebar-menu">
-            <ul>
-                <li><a href="#"><i class="fas fa-home"></i> Inicio</a></li>
-                <li><a href="#"><i class="fas fa-list"></i> Categorías</a></li>
-                <li><a href="#"><i class="fas fa-heart"></i> Favoritos</a></li>
-                <li><a href="#"><i class="fas fa-store"></i> Locales</a></li>
-                <li><a href="#"><i class="fas fa-user"></i> Perfil</a></li>
-                <li><a href="#"><i class="fas fa-tag"></i> Promociones</a></li>
-                <li><a href="#"><i class="fas fa-cog"></i> Configuración</a></li>
-                <li><a href="#"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a></li>
-            </ul>
-        </nav>
-    </aside>
-
-    <main class="main-content">
-        <section class="banner">
-            <img src="assets/banner.jpg" alt="Ofertas HealthyBites">
-        </section>
-
-        <section class="categories">
-            <h2>Categorías</h2>
-            <div class="category-grid">
-                <div class="category-item">
-                    <img src="assets/salad.jpg" alt="Ensaladas">
-                    <p>Ensaladas</p>
-                </div>
-                <div class="category-item">
-                    <img src="assets/bowl.jpg" alt="Bowls">
-                    <p>Bowls</p>
-                </div>
-                <div class="category-item">
-                    <img src="assets/snack.jpg" alt="Snacks">
-                    <p>Snacks</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Productos Destacados -->
-        <section class="featured">
-            <h2>Recomendados para ti</h2>
-            <div class="product-grid">
-                <div class="product-card">
-                    <img src="assets/product1.jpg" alt="Ensalada César">
-                    <h3>Ensalada César</h3>
-                    <p>$8.99</p>
-                    <button class="btn-add">+</button>
-                </div>
-                <div class="product-card">
-                    <img src="assets/product2.jpg" alt="Bowl de Quinoa">
-                    <h3>Bowl de Quinoa</h3>
-                    <p>$10.99</p>
-                    <button class="btn-add">+</button>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <script>
-        document.getElementById('menu-toggle').addEventListener('click', function() {
-            document.getElementById('sidebar').classList.toggle('active');
-        });
-    </script>
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+      document.querySelector('.sidebar').classList.toggle('active');
+    });
+  </script>
 </body>
-
 </html>
