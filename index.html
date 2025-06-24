@@ -10,15 +10,13 @@
 </head>
 
 <body>
-    <header class="top-header">
-        <button id="menu-toggle" class="menu-toggle"><i class="fas fa-bars"></i></button>
-        <h2>Bienvenido a DermaGlow</h2>
-    </header>
 
     <aside class="sidebar" id="sidebar">
         <div>
-            <h1>DermaGlow</h1>
-            <nav>
+            <div class="sidebar-header">
+                <h1>DermaGlow</h1>
+            </div>
+            <nav class="sidebar-menu">
                 <ul>
                     <li><a href="#"><i class="fas fa-home"></i> Inicio</a></li>
                     <li><a href="#"><i class="fas fa-spa"></i> Hidratantes</a></li>
@@ -38,7 +36,15 @@
     </aside>
 
     <main class="main-content">
-        <p>Explora los productos más destacados del cuidado facial.</p>
+        <header class="header">
+            <button id="menu-toggle" class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+            <h2>Bienvenido a DermaGlow</h2>
+        </header>
+        <section class="content">
+            <p>Explora los mejores productos del cuidado facial.</p>
+        </section>
     </main>
 
     <script>
@@ -48,6 +54,7 @@
             sidebar.classList.toggle('active');
         });
     </script>
+
 </body>
 
 </html>

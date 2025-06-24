@@ -6,10 +6,13 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f9f6f7;
+    background-color: #fdf9f9;
 }
 
-.top-header {
+
+/* Header superior */
+
+.header {
     background: #fff;
     display: flex;
     align-items: center;
@@ -28,6 +31,9 @@ body {
     cursor: pointer;
     color: #e27d9d;
 }
+
+
+/* Sidebar oculto por defecto */
 
 .sidebar {
     width: 270px;
@@ -48,7 +54,7 @@ body {
     left: 0;
 }
 
-.sidebar h1 {
+.sidebar-header h1 {
     text-align: center;
     font-size: 1.8rem;
     color: #e27d9d;
@@ -56,16 +62,16 @@ body {
     margin: 30px 0 40px;
 }
 
-.sidebar nav ul {
+.sidebar-menu ul {
     list-style: none;
     padding: 0 20px;
 }
 
-.sidebar nav ul li {
+.sidebar-menu li {
     margin-bottom: 12px;
 }
 
-.sidebar nav ul li a {
+.sidebar-menu li a {
     text-decoration: none;
     padding: 12px 20px;
     display: block;
@@ -77,10 +83,13 @@ body {
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
 }
 
-.sidebar nav ul li a:hover {
+.sidebar-menu li a:hover {
     background-color: #ffe9ef;
     color: #e27d9d;
 }
+
+
+/* Sección de sesión */
 
 .bottom-profile {
     padding: 20px;
@@ -93,6 +102,7 @@ body {
     font-size: 2rem;
     color: #c7a7b5;
     margin-bottom: 5px;
+    display: block;
 }
 
 .bottom-profile p {
@@ -100,6 +110,9 @@ body {
     color: #6c6c6c;
     font-size: 0.9rem;
 }
+
+
+/* Contenido principal */
 
 .main-content {
     padding: 100px 30px 30px 30px;
