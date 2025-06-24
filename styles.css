@@ -7,10 +7,21 @@
 body {
     font-family: 'Arial', sans-serif;
     background-color: #fdf9f9;
+    transition: margin-left 0.3s ease;
 }
 
-
-/* Header superior */
+.menu-toggle {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    margin: 15px;
+    cursor: pointer;
+    color: #e27d9d;
+    z-index: 1100;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
 
 .header {
     background: #fff;
@@ -21,19 +32,11 @@ body {
     position: fixed;
     width: 100%;
     z-index: 1000;
+    left: 0;
+    transition: left 0.3s ease;
+    top: 0;
+    padding-left: 70px;
 }
-
-.menu-toggle {
-    font-size: 1.5rem;
-    background: none;
-    border: none;
-    margin-right: 15px;
-    cursor: pointer;
-    color: #e27d9d;
-}
-
-
-/* Sidebar oculto por defecto */
 
 .sidebar {
     width: 270px;
@@ -46,7 +49,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    z-index: 999;
+    z-index: 1001;
     box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
 }
 
@@ -88,9 +91,6 @@ body {
     color: #e27d9d;
 }
 
-
-/* Sección de sesión */
-
 .bottom-profile {
     padding: 20px;
     text-align: center;
@@ -111,9 +111,21 @@ body {
     font-size: 0.9rem;
 }
 
-
-/* Contenido principal */
-
 .main-content {
     padding: 100px 30px 30px 30px;
+    transition: margin-left 0.3s ease;
+    margin-top: 60px;
+    /* Espacio para el header */
+}
+
+.sidebar.active~.main-content,
+.sidebar.active~.header {
+    margin-left: 270px;
+}
+
+.content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
