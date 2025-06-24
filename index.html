@@ -1,47 +1,21 @@
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HealthyBites</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-    <aside class="sidebar">
-        <div class="sidebar-header">
-            <h1>HealthyBites</h1>
-        </div>
-        <nav class="sidebar-menu">
+<aside class="sidebar">
+    <div>
+        <h1>DermaGlow</h1>
+        <nav>
             <ul>
-                <li><a href="#"><i class="fas fa-home"></i> Inicio</a></li>
-                <li><a href="#"><i class="fas fa-utensils"></i> Menú</a></li>
-                <li><a href="#"><i class="fas fa-heart"></i> Favoritos</a></li>
-                <li><a href="#"><i class="fas fa-map-marker-alt"></i> Locales</a></li>
-                <li><a href="#"><i class="fas fa-user"></i> Perfil</a></li>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Hidratantes</a></li>
+                <li><a href="#">Limpiadores</a></li>
+                <li><a href="#">Sueros</a></li>
+                <li><a href="#">Mascarillas</a></li>
+                <li><a href="#">Favoritos</a></li>
+                <li><a href="#">Tiendas</a></li>
+                <li><a href="#">Perfil</a></li>
             </ul>
         </nav>
-    </aside>
-
-    <main class="main-content">
-        <header class="header">
-            <button id="menu-toggle" class="menu-toggle">
-        <i class="fas fa-bars"></i>
-      </button>
-            <h2>Bienvenido</h2>
-        </header>
-        <section class="content">
-            <p>Explora nuestros productos saludables.</p>
-        </section>
-    </main>
-
-    <script>
-        document.getElementById('menu-toggle').addEventListener('click', function() {
-            document.querySelector('.sidebar').classList.toggle('active');
-        });
-    </script>
-</body>
-
-</html>
+    </div>
+    <div class="bottom-profile">
+        <i class="fas fa-user-circle"></i>
+        <p>Iniciar Sesión<br><small>Mi Cuenta</small></p>
+    </div>
+</aside>
