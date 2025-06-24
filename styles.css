@@ -1,93 +1,92 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
 body {
-  background-color: #f5f5f5;
-  color: #333;
+    background-color: #f5f5f5;
+    color: #333;
 }
 
-
 .sidebar {
-  width: 250px;
-  height: 100vh;
-  background-color: #4CAF50;
-  color: white;
-  position: fixed;
-  top: 0;
-  left: -250px;
-  transition: left 0.3s;
-  z-index: 1000;
+    width: 250px;
+    height: 100vh;
+    background-color: #4CAF50;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    transition: left 0.3s;
+    z-index: 1000;
 }
 
 .sidebar.active {
-  left: 0;
+    left: 0;
 }
 
 .sidebar-header {
-  padding: 20px;
-  text-align: center;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .sidebar-header h1 {
-  font-size: 1.5rem;
+    font-size: 1.5rem;
 }
 
 .sidebar-menu ul {
-  list-style: none;
+    list-style: none;
 }
 
 .sidebar-menu li a {
-  display: block;
-  padding: 15px 20px;
-  color: white;
-  text-decoration: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  transition: background 0.3s;
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: background 0.3s;
 }
 
 .sidebar-menu li a:hover {
-  background-color: #45a049;
+    background-color: #45a049;
 }
 
 .sidebar-menu i {
-  margin-right: 10px;
+    margin-right: 10px;
 }
 
 .main-content {
-  margin-left: 0;
-  transition: margin-left 0.3s;
-  padding: 20px;
+    margin-left: 0;
+    transition: margin-left 0.3s;
+    padding: 20px;
 }
 
-.sidebar.active + .main-content {
-  margin-left: 250px;
+.sidebar.active+.main-content {
+    margin-left: 250px;
 }
 
 .header {
-  display: flex;
-  align-items: center;
-  padding: 15px;
-  background-color: white;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .menu-toggle {
-  background: none;
-  border: none;
-  font-size: 1.2rem;
-  margin-right: 15px;
-  cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    margin-right: 15px;
+    cursor: pointer;
 }
 
 .content {
-  padding: 20px;
-  background: white;
-  border-radius: 8px;
-  margin-top: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
